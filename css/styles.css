@@ -77,7 +77,7 @@ body {
         rgba(20, 20, 20, 0.8) 78.8%,
         #141414 100%
       ),
-      url(../images/hero-bg.jpg);
+      url(../images/hero-bg@2x.jpg);
   }
 }
 .hero > .container {
