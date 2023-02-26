@@ -413,14 +413,24 @@ body {
 .services-list {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 .services-item {
-  flex-basis: calc((100% - 24px * 3) / 4);
+  flex-basis: calc((100% - 24px) / 2);
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid #898989;
   padding: 80px 40px 50px 40px;
+}
+@media screen and (min-width: 1920px) {
+  .services-list {
+    flex-wrap: nowrap;
+  }
+  .services-item {
+    flex-basis: calc((100% - 24px * 3) / 4);
+  }
 }
 .services-icon {
   margin-bottom: 20px;
